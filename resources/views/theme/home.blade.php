@@ -18,6 +18,12 @@
 
 						@else<span class="subheading">Welcome</span>
 						@endif
+						@if(session('successful_booking'))
+							<div class="alert alert-success">
+								{{ session('successful_booking') }}
+							</div>
+						@endif
+
 						<h1 class="mb-4">The Best Coffee Testing Experience</h1>
 						<p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
 							necessary regelialia.

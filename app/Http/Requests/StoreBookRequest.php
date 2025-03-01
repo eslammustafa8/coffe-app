@@ -24,10 +24,10 @@ class StoreBookRequest extends FormRequest
             return [
                 'first_name' => 'required|string|max:50',
                 'last_name' => 'required|string|max:50',
-                'phone' => 'required|digits:10', // Ensure phone is exactly 10 digits
-                'email' => 'required|email|max:100', // Email is required, must be valid, and max 100 characters
+                'phone' => 'required|digits:11', // Ensure phone is exactly 10 digits
+                // 'email' => 'required|email|max:100', // Email is required, must be valid, and max 100 characters
                 'date' => 'required|date|after:today', // Date must be after today
-                'time' => 'required|date_format:H:i', // Time must match the format HH:MM
+                'time' => 'required', // Time must match the format HH:MM
                 'message' => 'nullable' // Message is optional
             ];
         }

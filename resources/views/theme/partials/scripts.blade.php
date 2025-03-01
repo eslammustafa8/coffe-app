@@ -16,7 +16,22 @@
 <script src="{{asset('assets/js')}}/google-map.js"></script>
 <script src="{{asset('assets/js')}}/main.js"></script><!-- Bootstrap CSS -->
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('form.appointment-form').on('submit', function (e) {
+            var dateInput = $('input[name="date"]');
+            var dateValue = dateInput.val(); // التاريخ المدخل (Y-m-d)
 
+            if (dateValue) {
+                dateInput.val(dateValue); // التاريخ هيبقى متوافق مع Y-m-d
+            } else {
+                e.preventDefault(); // لو التاريخ مش مدخل، امنع إرسال الفورم
+                alert('Please enter a valid date.');
+            }
+        });
+    });
+</script>
 <script>
     $(document).ready(function () {
 
