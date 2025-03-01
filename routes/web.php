@@ -6,6 +6,8 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ThemeController;
+use App\Http\Controllers\UserOrdersController;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
 
@@ -60,5 +62,7 @@ Route::get('/checkout/success',[OrderController::class,'success'])->name('Succes
 //------------------------------------booking---------------
 Route::post('/book', [BookController::class, 'store'])->name('book.store');
 
-
+Route::get('user/orders',[UserOrdersController::class,'showOrders'])->name('user.orders')->middleware('auth');
+Route::get('user/Bookings',[BookController::class,'showBookings'])->name('user.Bookings')->middleware('auth');
+Route::get('user/Bookings/review',[BookController::class,'showBookingsrEVIEW'])->name('user.Bookings.REVIEW')->middleware('auth');
 require __DIR__.'/auth.php';
