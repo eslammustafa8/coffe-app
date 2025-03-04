@@ -2,7 +2,7 @@
 
 @section('title', 'Menu')
 @section('active-menu','active')
-@section('image_name', 'bg_3.jpg')
+@section('image_name', 'bg_1.jpg')
 
 @section('content')
 
