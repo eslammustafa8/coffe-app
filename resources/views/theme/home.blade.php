@@ -16,13 +16,26 @@
 								{{ session('success') }}
 							</div>
 
+						@elseif	(session('error'))
+							<div class="alert alert-danger">
+								{{ session('error') }}
+							</div>
+
 						@else<span class="subheading">Welcome</span>
 						@endif
+<<<<<<< HEAD
 						@if(session('successful_booking'))
 							<div class="alert alert-success">
 								{{ session('successful_booking') }}
 							</div>
 						@endif
+=======
+						{{-- @if(session('successful_booking'))
+						<div class="alert alert-success">
+							{{ session('successful_booking') }}
+						</div>
+						@endif --}}
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
 
 
 

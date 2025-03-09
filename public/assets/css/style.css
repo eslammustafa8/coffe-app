@@ -60,9 +60,12 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-x: hidden;
+
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -79,7 +82,9 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  color: white;
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -1348,8 +1353,11 @@ pre {
   .table th,
   .table td {
     padding: 0.75rem;
+
+    color :#fff
     vertical-align: top;
-    border-top: 1px solid #dee2e6; }
+    border-top: 1px solid #dee2e6; 
+  }
   .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6; }
@@ -8088,6 +8096,7 @@ h1, h2, h3, h4, h5,
     text-align: center !important;
     vertical-align: middle;
     padding: 40px 10px;
+    color:#fff;
     border: 1px solid transparent !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; }
     .table tbody tr td.product-remove a {

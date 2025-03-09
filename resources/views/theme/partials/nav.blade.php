@@ -43,6 +43,16 @@
                                         Logout
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('user.orders') }}">
+                                        Your orders
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('user.Bookings') }}">
+                                        Your Bookings
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     @endif
