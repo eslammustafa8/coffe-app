@@ -58,8 +58,7 @@ Route::get('/checkout/success',[OrderController::class,'success'])->name('Succes
 
 
 //------------------------------------booking---------------
-Route::post('/books/store',[BookController::class, 'store'])->name('book.store');
-
+Route::post('/book', [BookController::class, 'store'])->name('book.store');
 
 
 require __DIR__.'/auth.php';

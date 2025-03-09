@@ -28,5 +28,5 @@
     <link rel="stylesheet" href="{{asset('assets/css')}}/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5c5946fe44.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
