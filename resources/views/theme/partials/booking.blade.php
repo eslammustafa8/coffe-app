@@ -46,7 +46,7 @@
                     <div class="d-md-flex">
                         <div class="form-group">
                             <div class="input-wrap">
-                                <div class="icon"><span class="ion-md-calendar"></span></div>
+                                <div class="icon"><span class="ion-md-calendar"></span></div>{{-- am - or pm need to checked --}}
                                 <input type="text" class="form-control appointment_date" placeholder="Date" name="date">
                             </div>
                         </div>

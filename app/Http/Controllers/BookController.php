@@ -17,11 +17,16 @@ class BookController extends Controller
           
             $booking['date'] = $date;
             $booking['time'] = $time;
-        // dd($booking);
+        // dd(Date('Y-m-d'));
 
 
+            if($booking['date'] > Date('Y-m-d')){
+                Book::create($booking);
+                return redirect()->route('theme.index')->with('success','Book created successfully');
 
-   Book::create($booking);
-   return redirect()->route('theme.index')->with('success','Book created successfully');
-}
+            }
+            else{
+                return redirect()->route('theme.index')->with('error','Invalid date');
+            }
+            }
 }
