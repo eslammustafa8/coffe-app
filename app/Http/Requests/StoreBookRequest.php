@@ -28,8 +28,12 @@ class StoreBookRequest extends FormRequest
                 // 'email' => 'required|email|max:100', // Email is required, must be valid, and max 100 characters
                 'date' => 'required|date|after:today', // Date must be after today
                 'time' => 'required', // Time must match the format HH:MM
+<<<<<<< HEAD
+                'message' => 'nullable' // Message is optional
+=======
                 'message' => 'nullable', // Message is optional
                 'review'=>'nullable'
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
             ];
         }
 

@@ -61,6 +61,10 @@ Route::get('/checkout/success',[OrderController::class,'success'])->name('Succes
 
 //------------------------------------booking---------------
 Route::post('/book', [BookController::class, 'store'])->name('book.store');
+<<<<<<< HEAD
+
+=======
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
 
 Route::get('user/orders',[UserOrdersController::class,'showOrders'])->name('user.orders')->middleware('auth');
 Route::get('user/Bookings',[BookController::class,'showBookings'])->name('user.Bookings')->middleware('auth');

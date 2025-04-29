@@ -27,7 +27,11 @@
                 </div>
             </div>
 
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
 
             <div class="book p-4">
                 <h3>Book a Table</h3>
@@ -37,6 +41,12 @@
                     <div class="d-md-flex">
 
                         <div class="form-group">
+<<<<<<< HEAD
+                            <input type="text" class="form-control" placeholder="First Name" name="first_name">
+                        </div>
+                        <div class="form-group ml-md-4">
+                            <input type="text" class="form-control" placeholder="Last Name" name="last_name">
+=======
                             <input type="text" class="form-control" placeholder="First Name" name="first_name" value="{{ old('first_name') }}">
                             @error('First Name')
                                 <div class="alert alert-danger">{{ $message }}</div>
@@ -47,22 +57,35 @@
                             @error('last_name')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
                         </div>
                     </div>
                     <div class="d-md-flex">
                         <div class="form-group">
                             <div class="input-wrap">
+<<<<<<< HEAD
+                                <div class="icon"><span class="ion-md-calendar"></span></div>{{-- am - or pm need to checked --}}
+                                <input type="text" class="form-control appointment_date" placeholder="Date" name="date">
+=======
                                 <div class="icon"><span class="ion-md-calendar"></span></div>{{-- am - or pm need to
                                 checked --}}
                                 <input type="text" class="form-control appointment_date" placeholder="Date" name="date" value="{{ old('date') }}">
                                 @error('date')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
                             </div>
                         </div>
                         <div class="form-group ml-md-4">
                             <div class="input-wrap">
                                 <div class="icon"><span class="ion-ios-clock"></span></div>
+<<<<<<< HEAD
+                                <input type="text" class="form-control appointment_time" placeholder="Time" name="time">
+                            </div>
+                        </div>
+                        <div class="form-group ml-md-4">
+                            <input type="text" class="form-control" placeholder="Phone" name="phone">
+=======
                                 <input type="text" class="form-control appointment_time" placeholder="Time" name="time" value="{{ old('time') }}">
                                 @error('time')
                                     <div class="alert alert-danger">{{ $message }}</div>
@@ -74,15 +97,20 @@
                             @error('phone')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
                         </div>
                     </div>
                     <div class="d-md-flex">
                         <div class="form-group">
                             <textarea name="message" id="" cols="30" rows="2" class="form-control"
+<<<<<<< HEAD
+                                placeholder="Message"></textarea>
+=======
                                 placeholder="Message">{{ old('message') }}</textarea>
                             @error('message')
                                 <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
+>>>>>>> c654ae083dce96217b2d0eb02f3cd52893e38feb
                         </div>
                         <div class="form-group ml-md-4">
                             <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
